@@ -344,13 +344,13 @@
             snake.forEach((segment, index) => {
                 // Head is different color
                 if (index === 0) {
-                    ctx.fillStyle = '#00ff88';
-                    ctx.strokeStyle = '#00cc6a';
+                    ctx.fillStyle = '#0088ff';
+                    ctx.strokeStyle = '#0066cc';
                 } else {
                     // Gradient body
                     const intensity = 150 - (index * 5);
-                    ctx.fillStyle = `rgb(0, ${Math.max(100, intensity)}, 100)`;
-                    ctx.strokeStyle = '#00aa55';
+                    ctx.fillStyle = `rgb(0, 100, ${Math.max(150, intensity)})`;
+                    ctx.strokeStyle = '#0055aa';
                 }
 
                 ctx.fillRect(segment.x * gridSize, segment.y * gridSize, gridSize, gridSize);
